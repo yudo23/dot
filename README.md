@@ -41,15 +41,12 @@
 <ol>
     <li>
         Web ini dibuat dengan menggunakan laravel 9
-        <br>
     </li>
     <li>
         Download / clone repository https://github.com/yudo23/dot.git
-        <br>
     </li>
     <li>
         Jalankan composer install --ignore-platform-reqs . Tunggu hingga proses download selesai
-        <br>
     </li>
     <li>
         Jalankan php artisan jwt:secret (Ketik yes jika ada "pemberitahuan")
@@ -68,12 +65,10 @@
     </li>
     <li>
         Cek file .env , pastikan konfigurasi raja ongkir sudah ada , jika tidak ada silahkan ditambahkan seperti konfigurasi dibawah ini . CALL_API_FROM merupakan swapable implementation jika CALL_API_FROM=online maka akan memanggil data provinsi dan city secara online (raja ongkir) , namun jika CALL_API_FROM=database maka akan memanggil data dari database
-        <br>
-            RAJAONGKIR_API_KEY=0df6d5bf733214af6c6644eb8717c92c
-            RAJAONGKIR_PACKAGE=starter
-            CALL_API_FROM=online
-        <br>
-        Untuk CALL_API_FROM bisa online/database pilih salah satunya
+            <p>RAJAONGKIR_API_KEY=0df6d5bf733214af6c6644eb8717c92c</p>
+            <p>RAJAONGKIR_PACKAGE=starter</p>
+            <p>CALL_API_FROM=online</p>
+        <p>Untuk CALL_API_FROM bisa online/database pilih salah satunya</p>
     </li>
     <li>
         Jalankan php artisan migrate
@@ -89,8 +84,8 @@
     </li>
         Login terlebih dahulu melalui http://localhost:8000/api/auth/login . Jika login berhasil maka user akan mendapatkan token aksesnya bertipe Bearer
         Akun Login : 
-        -Email : admin@gmail.com
-        -Password : admin
+        <p>Email : admin@gmail.com</p>
+        <p>Password : admin</p>
     <li>
         Gunakann token tersebut ketika memanggil api provinsi,city,logout, dan refresh token yaitu dengan menambahkan Headers berupa Autorization : Bearer $token disetiap requestnya
     </li>
