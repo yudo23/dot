@@ -5,15 +5,15 @@
 <ol>
     <li>
         Integrasi dengan API province & city Rajaongkir (paket starter) https://rajaongkir.com/dokumentasi/starter
-        [TASK DONE]  -> Menggunakan package https://github.com/kavist/rajaongkir
+        <p><b>[TASK DONE]  -> Menggunakan package https://github.com/kavist/rajaongkir</b></p>
     </li>
     <li>
         Membuat artisan command​ yg melakukan fetching API data provinsi & kota dan data disimpan ke dalam database.
-        [TASK DONE] -> Terdapat di app/database/seeders/WilayahSeeder.php (Fetch data dari rajaongkir kemudian disimpan kedatabase)
+        <p><b>[TASK DONE] -> Terdapat di app/database/seeders/WilayahSeeder.php (Fetch data dari rajaongkir kemudian disimpan kedatabase)</b></p>
     </li>
     <li>
         Membuat REST API untuk pencarian provinsi & kota dengan endpoint berikut
-        [TASK DONE] -> Terdapat di app/Http/Controller/API/WilayahController.php
+        <p><b>[TASK DONE] -> Terdapat di app/Http/Controller/API/WilayahController.php</b></p>
     </li>
 </ol>
 
@@ -21,15 +21,15 @@
 <ol>
     <li>
         Membuat sumber data pencarian province & cities bisa melalui database​ atau direct API​ raja ongkir (swapable implementation). Proses swap implementasi dapat dilakukan melalui konfigurasi tanpa merubah source code yang sudah dibuat.
-        [TASK DONE] -> Terdapat di .env dengan konfigurasi CALL_API_FROM=online/database
+        <p><b>[TASK DONE] -> Terdapat di .env dengan konfigurasi CALL_API_FROM=online/database</b></p>
     </li>
     <li>
         Menyediakan API login agar endpoint pencarian hanya bisa diakses oleh authorized user saja
-        [TASK DONE] -> JWTAuth dan Terdapat di app/Http/Controller/API/AuthController.php
+        <p><b>[TASK DONE] -> JWTAuth dan Terdapat di app/Http/Controller/API/AuthController.php</b></p>
     </li>
     <li>
-        Membuat unit test / API test agar web service tetap reliable & maintainable
-        [TASK DONE] -> Testing API di POSTMAN
+        Membuat unit test / API test agar web service tetap reliable & maintainable</b></p>
+        <p><b>[TASK DONE] -> Testing API di POSTMAN
     </li>
 </ol>
 
