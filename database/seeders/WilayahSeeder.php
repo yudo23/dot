@@ -33,8 +33,8 @@ class WilayahSeeder extends Seeder
             $province = $province["rajaongkir"]["results"];
 
             foreach($province as $index => $row){
-                Province::firstOrCreate([
-                    'province_id' => $row["province_id"]
+                Province::updateOrCreate([
+                    'province_id' => $row["province_id"],
                 ],[
                     'province_id' => $row["province_id"],
                     'province' => $row["province"],
@@ -54,8 +54,8 @@ class WilayahSeeder extends Seeder
             $city = $city["rajaongkir"]["results"];
 
             foreach($city as $index => $row){
-                City::firstOrCreate([
-                    'city_id' => $row["city_id"]
+                City::updateOrCreate([
+                    'city_id' => $row["city_id"],
                 ],[
                     'city_id' => $row["city_id"],
                     'province_id' => $row["province_id"],
