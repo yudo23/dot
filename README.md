@@ -155,7 +155,7 @@
         Cari menu file > import atau shortcut CTRL + O > Choosee File
     </li>
     <li>
-        Klik Collection > Open dot folder > Hit API
+        Klik Collection > Open dot folder (berisi 5 request) > Pilih request > Hit API
     </li>
 </ol>
 </body>
