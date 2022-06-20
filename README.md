@@ -42,7 +42,7 @@
 
 <ol>
     <li>
-        API ini dibuat dengan menggunakan laravel 9
+        API ini dibuat dengan menggunakan laravel 9 dan Pastikan Ada Koneksi Internet saat proses instalasi
         <br><br>
     </li>
     <li>
