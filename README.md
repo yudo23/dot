@@ -149,6 +149,9 @@
         Buka Postman . Jika belum punya download di https://www.postman.com/downloads/
     </li>
     <li>
+        File export terdapat di folder postman
+    </li>
+    <li>
         Cari menu file > import atau shortcut CTRL + O > Choosee File
     </li>
     <li>
