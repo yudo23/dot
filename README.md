@@ -65,13 +65,13 @@
     </li>
     <li>
         Cek file .env , pastikan konfigurasi raja ongkir sudah ada , jika tidak ada silahkan ditambahkan seperti konfigurasi dibawah ini . CALL_API_FROM merupakan swapable implementation jika CALL_API_FROM=online maka akan memanggil data provinsi dan city secara online (raja ongkir) , namun jika CALL_API_FROM=database maka akan memanggil data dari database
-        <br><br><br>
+        <br><br>
             RAJAONGKIR_API_KEY=0df6d5bf733214af6c6644eb8717c92c
         <br>
             RAJAONGKIR_PACKAGE=starter
         <br>
             CALL_API_FROM=online
-        <br><br><br>
+        <br><br>
         Untuk CALL_API_FROM bisa online/database pilih salah satunya</p>
     </li>
     <li>
