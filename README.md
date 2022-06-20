@@ -1,30 +1,39 @@
 <html>
 <body>
 
-<h3>===DAFTAR SPRINT 1====</h3>
+<h5>===DAFTAR SPRINT 1====</h5>
 <ol>
     <li>
-        1.Integrasi dengan API province & city Rajaongkir (paket starter) https://rajaongkir.com/dokumentasi/starter
+        Integrasi dengan API province & city Rajaongkir (paket starter) https://rajaongkir.com/dokumentasi/starter
         [TASK DONE]  -> Menggunakan package https://github.com/kavist/rajaongkir
+    </li>
+    <li>
+        Membuat artisan command​ yg melakukan fetching API data provinsi & kota dan data disimpan ke dalam database.
+        [TASK DONE] -> Terdapat di app/database/seeders/WilayahSeeder.php (Fetch data dari rajaongkir kemudian disimpan kedatabase)
+    </li>
+    <li>
+        Membuat REST API untuk pencarian provinsi & kota dengan endpoint berikut
+        [TASK DONE] -> Terdapat di app/Http/Controller/API/WilayahController.php
     </li>
 </ol>
 
-2.Membuat artisan command​ yg melakukan fetching API data provinsi & kota dan data
-disimpan ke dalam database.
-[TASK DONE] -> Terdapat di app/database/seeders/WilayahSeeder.php (Fetch data dari rajaongkir kemudian disimpan kedatabase)
+<h5>===DAFTAR SPRINT 2====</h5>
+<ol>
+    <li>
+        Membuat sumber data pencarian province & cities bisa melalui database​ atau direct API​ raja ongkir (swapable implementation). Proses swap implementasi dapat dilakukan melalui konfigurasi tanpa merubah source code yang sudah dibuat.
+        [TASK DONE] -> Terdapat di .env dengan konfigurasi CALL_API_FROM=online/database
+    </li>
+    <li>
+        Menyediakan API login agar endpoint pencarian hanya bisa diakses oleh authorized user saja
+        [TASK DONE] -> JWTAuth dan Terdapat di app/Http/Controller/API/AuthController.php
+    </li>
+    <li>
+        Membuat unit test / API test agar web service tetap reliable & maintainable
+        [TASK DONE] -> Testing API di POSTMAN
+    </li>
+</ol>
 
-3.Membuat REST API untuk pencarian provinsi & kota dengan endpoint berikut
-[TASK DONE] -> Terdapat di app/Http/Controller/API/WilayahController.php
 
-===DAFTAR SPRINT 1====
-1.Membuat sumber data pencarian province & cities bisa melalui database​ atau direct API​ raja ongkir (swapable implementation). Proses swap implementasi dapat dilakukan melalui konfigurasi tanpa merubah source code yang sudah dibuat.
-[TASK DONE] -> Terdapat di .env dengan konfigurasi CALL_API_FROM=online/database
-
-2.Menyediakan API login agar endpoint pencarian hanya bisa diakses oleh authorized user saja
-[TASK DONE] -> JWTAuth dan Terdapat di app/Http/Controller/API/AuthController.php
-
-3.Membuat unit test / API test agar web service tetap reliable & maintainable
-[TASK DONE] -> Testing API di POSTMAN
 
 
 ==PANDUAN INSTALASI==
