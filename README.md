@@ -17,6 +17,7 @@
     </li>
 </ol>
 
+<br><br>
 <h5>===DAFTAR SPRINT 2====</h5>
 <ol>
     <li>
@@ -33,9 +34,7 @@
     </li>
 </ol>
 
-
-
-
+<br><br>
 <h5>==PANDUAN INSTALASI==</h5>
 
 <ol>
