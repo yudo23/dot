@@ -41,29 +41,39 @@
 <ol>
     <li>
         Web ini dibuat dengan menggunakan laravel 9
-        <br>
+        <br><br>
     </li>
     <li>
         Download / clone repository https://github.com/yudo23/dot.git
-        <br>
+        <br><br>
     </li>
     <li>
         Jalankan composer install --ignore-platform-reqs . Tunggu hingga proses download selesai
+         <br><br>
     </li>
     <li>
         Jalankan php artisan jwt:secret (Ketik yes jika ada "pemberitahuan")
+         <br><br>
     </li>
     <li>
         Buat database mysql dengan nama dot_tes
+         <br><br>
     </li>
     <li>
         Konfigurasi database di file .env seperti dibawah ini .
+        <br>
         DB_CONNECTION=mysql
+        <br>
         DB_HOST=127.0.0.1
+        <br>
         DB_PORT=3306
+        <br>
         DB_DATABASE=dot_tes
+        <br>
         DB_USERNAME=root
+        <br>
         DB_PASSWORD=
+        <br><br>
     </li>
     <li>
         Cek file .env , pastikan konfigurasi raja ongkir sudah ada , jika tidak ada silahkan ditambahkan seperti konfigurasi dibawah ini . CALL_API_FROM merupakan swapable implementation jika CALL_API_FROM=online maka akan memanggil data provinsi dan city secara online (raja ongkir) , namun jika CALL_API_FROM=database maka akan memanggil data dari database
