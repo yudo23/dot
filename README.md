@@ -41,9 +41,11 @@
 <ol>
     <li>
         Web ini dibuat dengan menggunakan laravel 9
+        <br><br>
     </li>
     <li>
         Download / clone repository https://github.com/yudo23/dot.git
+        <br><br>
     </li>
     <li>
         Jalankan composer install --ignore-platform-reqs . Tunggu hingga proses download selesai
