@@ -147,15 +147,12 @@
 <ol>
     <li>
         Buka Postman . Jika belum punya download di https://www.postman.com/downloads/
-        <br><br>
     </li>
     <li>
         Cari menu file > import atau shortcut CTRL + O > Choosee File
-        <br><br>
     </li>
     <li>
-        Klik Collection > Open dot folder > Run API
-        <br><br>
+        Klik Collection > Open dot folder > Hit API
     </li>
 </ol>
 </body>
