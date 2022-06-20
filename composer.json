@@ -5,10 +5,10 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.2.5|^8.0",
+        "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
         "kavist/rajaongkir": "^1.1",
-        "laravel/framework": "^7.29",
+        "laravel/framework": "^9.11",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "tymon/jwt-auth": "^1.0"
