@@ -84,8 +84,8 @@
     </li>
         Login terlebih dahulu melalui http://localhost:8000/api/auth/login . Jika login berhasil maka user akan mendapatkan token aksesnya bertipe Bearer
         Akun Login : 
-        <p>Email : admin@gmail.com</p>
-        <p>Password : admin</p>
+        Email : admin@gmail.com
+        Password : admin
     <li>
         Gunakann token tersebut ketika memanggil api provinsi,city,logout, dan refresh token yaitu dengan menambahkan Headers berupa Autorization : Bearer $token disetiap requestnya
     </li>
