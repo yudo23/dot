@@ -32,7 +32,7 @@
     </li>
     <li>
         Membuat unit test / API test agar web service tetap reliable & maintainable</b></p>
-        <p><b>[TASK DONE] -> Testing API di POSTMAN
+        <p><b>[TASK DONE] -> Testing API di POSTMAN (Screenshoot saya sertakan difolder screenshoot)
     </li>
 </ol>
 
