@@ -61,7 +61,7 @@
     </li>
     <li>
         Konfigurasi database di file .env seperti dibawah ini .
-        <br>
+        <br><br>
         DB_CONNECTION=mysql
         <br>
         DB_HOST=127.0.0.1
@@ -84,26 +84,36 @@
         <br>
             CALL_API_FROM=online
         <br><br>
-        Untuk CALL_API_FROM bisa online/database pilih salah satunya</p>
+        Untuk CALL_API_FROM bisa online/database pilih salah satunya
+        <br><br>
     </li>
     <li>
         Jalankan php artisan migrate
+        <br><br>
     </li>
     <li>
         Jalankan php artisan db:seed
+        <br><br>
     </li>
     <li>
         Jalakan php artisan serve
+        <br><br>
     </li>
     <li>
         HIT api melalui software postman
+        <br><br>
     </li>
         Login terlebih dahulu melalui http://localhost:8000/api/auth/login . Jika login berhasil maka user akan mendapatkan token aksesnya bertipe Bearer
+        <br><br>
         Akun Login :
+        <br>
         Email : admin@gmail.com
+        <br>
         Password : admin
+        <br><br>
     <li>
         Gunakann token tersebut ketika memanggil api provinsi,city,logout, dan refresh token yaitu dengan menambahkan Headers berupa Autorization : Bearer $token disetiap requestnya
+        <br><br>
     </li>
 <ol>
 
