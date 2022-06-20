@@ -8,7 +8,7 @@
 <ol>
     <li>
         Integrasi dengan API province & city Rajaongkir (paket starter) https://rajaongkir.com/dokumentasi/starter
-        <p><b>[TASK DONE]</b></p>
+        <p><b>[TASK DONE] - Konfigurasi Awal</b></p>
     </li>
     <li>
         Membuat artisan command​ yg melakukan fetching API data provinsi & kota dan data disimpan ke dalam database.
