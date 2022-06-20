@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<p>Untuk screenshoot juga saya sertakan di folder screenshoot<p>
+<p>Untuk screenshoot API juga saya sertakan di folder screenshoot<p>
 <p>API ini juga saya deploy ke http://dottes.000webhostapp.com/</p>
 
 <h5>===DAFTAR SPRINT 1====</h5>
