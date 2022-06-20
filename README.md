@@ -139,5 +139,22 @@
     <li>[GET]Provinsi=http://dottes.000webhostapp.com/api/search/province?province_id=</li>
     <li>[GET]City=http://dottes.000webhostapp.com/api/search/cities?city_id=</li>
 </ul>
+
+<h5>==EXPORT POSTMAN COLLECTION (OPSIONAL)==</h5>
+
+<ol>
+    <li>
+        Buka Postman . Jika belum punya download di https://www.postman.com/downloads/
+        <br><br>
+    </li>
+    <li>
+        Cari menu file > import atau shortcut CTRL + O > Choosee File
+        <br><br>
+    </li>
+    <li>
+        Klik Collection > Open dot folder > Run API
+        <br><br>
+    </li>
+</ol>
 </body>
 </html>
