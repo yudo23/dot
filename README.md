@@ -136,8 +136,8 @@
     <li>[POST]Login=http://dottes.000webhostapp.com/api/auth/login</li>
     <li>[GET]Logout=http://dottes.000webhostapp.com/api/auth/logout</li>
     <li>[GET]Refresh_token=http://dottes.000webhostapp.com/api/auth/refresh_token</li>
-    <li>[GET]Provinsi=http://dottes.000webhostapp.com/api/search/province / http://dottes.000webhostapp.com/api/search/province?province_id=1</li>
-    <li>[GET]City=http://dottes.000webhostapp.com/api/search/cities / http://dottes.000webhostapp.com/api/search/cities?city_id=1</li>
+    <li>[GET]Provinsi=http://dottes.000webhostapp.com/api/search/province / http://dottes.000webhostapp.com/api/search/province?province_id=</li>
+    <li>[GET]City=http://dottes.000webhostapp.com/api/search/cities / http://dottes.000webhostapp.com/api/search/cities?city_id=</li>
 </ul>
 </body>
 </html>
