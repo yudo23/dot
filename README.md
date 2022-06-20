@@ -105,13 +105,13 @@
         HIT api melalui software postman
         <br><br>
     </li>
-        Login terlebih dahulu melalui http://localhost:8000/api/auth/login . Jika login berhasil maka user akan mendapatkan token aksesnya bertipe Bearer
+        Login terlebih dahulu melalui http://localhost:8000/api/auth/login .Data yang dikirim dari body yaitu email dan password . Jika login berhasil maka user akan mendapatkan token aksesnya bertipe Bearer
         <br><br>
         Akun Login :
         <br>
-        Email : admin@gmail.com
+        email : admin@gmail.com
         <br>
-        Password : admin
+        password : admin
         <br><br>
     <li>
         Gunakann token tersebut ketika memanggil api provinsi,city,logout, dan refresh token yaitu dengan menambahkan Headers berupa Authorization : Bearer $token disetiap requestnya
