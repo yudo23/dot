@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "eb2d8ba3-8c3e-4d18-8351-d261951c029d",
+		"name": "dot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Province",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZG90dGVzLjAwMHdlYmhvc3RhcHAuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU1NzQzNDcyLCJleHAiOjE2NTU3NDcwNzIsIm5iZiI6MTY1NTc0MzQ3MiwianRpIjoiSTNoTXVIOG1vSW5yM1JrNCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.T5zp5L41P0KurYauAUMPcYA_v4Nx6gDMgvEu0PwC3rg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://dottes.000webhostapp.com/api/search/province?province_id=",
+					"protocol": "http",
+					"host": [
+						"dottes",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"search",
+						"province"
+					],
+					"query": [
+						{
+							"key": "province_id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "City",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZG90dGVzLjAwMHdlYmhvc3RhcHAuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU1NzQ1MjYxLCJleHAiOjE2NTU3NDg4NjEsIm5iZiI6MTY1NTc0NTI2MSwianRpIjoiM0d5dWpCS3ZWcW5YaU9IcyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3XgNFvwufjy-TpPjUvay18GdZVd2sJH2TsnuTef7Ptc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://dottes.000webhostapp.com/api/search/cities?city_id=",
+					"protocol": "http",
+					"host": [
+						"dottes",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"search",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "city_id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dottes.000webhostapp.com/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"dottes",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZG90dGVzLjAwMHdlYmhvc3RhcHAuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU1NzM3MDA3LCJleHAiOjE2NTU3NDA2MDcsIm5iZiI6MTY1NTczNzAwNywianRpIjoiRmN0eEZNWDhtV0NWUnM1biIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.8Al8gKPP4aQ0IVSUxrB9MtREbt_6k-cGISl8lP_t2fc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dottes.000webhostapp.com/api/auth/refresh",
+					"protocol": "http",
+					"host": [
+						"dottes",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZG90dGVzLjAwMHdlYmhvc3RhcHAuY29tL2FwaS9hdXRoL3JlZnJlc2giLCJpYXQiOjE2NTU3MzU5MzgsImV4cCI6MTY1NTc0MDE3NiwibmJmIjoxNjU1NzM2NTc2LCJqdGkiOiJCMnpzVDhadVpzalRzb2JQIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.dP-E1YRTwlmTQ4dRcU0cKzouw_WG_RGKax7z9RBAEKI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dottes.000webhostapp.com/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"dottes",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
