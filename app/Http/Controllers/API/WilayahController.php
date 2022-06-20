@@ -20,7 +20,7 @@ class WilayahController extends Controller
         try {
             $province_id = trim(htmlentities($request->input("province_id")));
 
-            if(env("CALL_API_FROM") == "databases"){
+            if(env("CALL_API_FROM") == "database"){
                 
                 $get_province = $this->province;
                 if(!empty($province_id)){
@@ -75,7 +75,7 @@ class WilayahController extends Controller
         try {
             $city_id = trim(htmlentities($request->input("city_id")));
 
-            if(env("CALL_API_FROM") == "databases"){
+            if(env("CALL_API_FROM") == "database"){
 
                 $get_cities = $this->city;
                 if(!empty($city_id)){
