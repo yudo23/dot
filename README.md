@@ -38,7 +38,7 @@
 </ol>
 
 <br><br>
-<h5>==PANDUAN INSTALASI==</h5>
+<h5>==PANDUAN INSTALASI OFFLINE==</h5>
 
 <ol>
     <li>
