@@ -1,8 +1,13 @@
+<html>
+<body>
 
-===DAFTAR SPRINT 1====
-1.Integrasi dengan API province & city Rajaongkir (paket starter)
-https://rajaongkir.com/dokumentasi/starter
-[TASK DONE]  -> Menggunakan package https://github.com/kavist/rajaongkir
+<h3>===DAFTAR SPRINT 1====</h3>
+<ol>
+    <li>
+        1.Integrasi dengan API province & city Rajaongkir (paket starter) https://rajaongkir.com/dokumentasi/starter
+        [TASK DONE]  -> Menggunakan package https://github.com/kavist/rajaongkir
+    </li>
+</ol>
 
 2.Membuat artisan command​ yg melakukan fetching API data provinsi & kota dan data
 disimpan ke dalam database.
@@ -73,3 +78,6 @@ URL HIT API
 -[GET]Refresh_token=http://localhost:8000/api/auth/refresh_token
 -[GET]Provinsi=http://localhost:8000/api/search/province / http://localhost:8000/api/search/province?province_id=1
 -[GET]City=http://localhost:8000/api/search/cities / http://localhost:8000/api/search/cities?city_id=1
+
+</body>
+</html>
