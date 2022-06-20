@@ -1,6 +1,8 @@
 <html>
 <body>
 
+<p>Untuk screenshoot juga saya sertakan di folder screenshoot<p>
+
 <h5>===DAFTAR SPRINT 1====</h5>
 <ol>
     <li>
