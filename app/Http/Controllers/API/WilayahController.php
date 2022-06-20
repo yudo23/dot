@@ -4,7 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Kavist\RajaOngkir\Facades\RajaOngkir;
+use Illuminate\Support\Facades\Http;
 use App\Models\Province;
 use App\Models\City;
 
@@ -34,17 +34,24 @@ class WilayahController extends Controller
                 goto ResultData;
             }
             else if(env("CALL_API_FROM") == "online"){
-                if(!empty($province_id)){
-                    $get_province = Rajaongkir::provinsi()->find($province_id);
-                    $get_province = array($get_province);
+
+                $response = Http::withHeaders([
+                    'key' => env("RAJAONGKIR_API_KEY"),
+                ])->get('https://api.rajaongkir.com/starter/province?province='.$province_id);
+
+                $response = $response->json();
+
+                if($response["rajaongkir"]["status"]["code"] != 200){
+                    $data_json["IsError"] = TRUE;
+                    $data_json["Message"] = $response["rajaongkir"]["status"]["description"];
+                    goto ResultData;
                 }
-                else{
-                    $get_province = Rajaongkir::provinsi()->all();
-                }
+
+                $response = $response["rajaongkir"]["results"];
                 
                 $data_json["IsError"] = FALSE;
                 $data_json["Message"] = "Data provinsi berhasil didapatkan";
-                $data_json["Data"] = $get_province;
+                $data_json["Data"] = $response;
                 goto ResultData;
             }
             else{
@@ -83,17 +90,23 @@ class WilayahController extends Controller
             }
             else if(env("CALL_API_FROM") == "online"){
 
-                if(!empty($city_id)){
-                    $get_cities = Rajaongkir::kota()->find($city_id);
-                    $get_cities = array($get_cities);
-                }
-                else{
-                    $get_cities = Rajaongkir::kota()->all();
+                $response = Http::withHeaders([
+                    'key' => env("RAJAONGKIR_API_KEY"),
+                ])->get('https://api.rajaongkir.com/starter/city?id='.$city_id);
+
+                $response = $response->json();
+
+                if($response["rajaongkir"]["status"]["code"] != 200){
+                    $data_json["IsError"] = TRUE;
+                    $data_json["Message"] = $response["rajaongkir"]["status"]["description"];
+                    goto ResultData;
                 }
 
+                $response = $response["rajaongkir"]["results"];
+                
                 $data_json["IsError"] = FALSE;
                 $data_json["Message"] = "Data cities berhasil didapatkan";
-                $data_json["Data"] = $get_cities;
+                $data_json["Data"] = $response;
                 goto ResultData;
 
             }

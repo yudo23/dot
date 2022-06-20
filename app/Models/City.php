@@ -11,10 +11,11 @@ class City extends Model
     use HasFactory;
     protected $table = "cities";
     protected $fillable = [
-        'id',
         'province_id',
         'city_id',
-        'name',
+        'type',
+        'city_name',
+        'postal_code'
     ];
 
     public function province()

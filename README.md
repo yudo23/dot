@@ -7,7 +7,7 @@
 <ol>
     <li>
         Integrasi dengan API province & city Rajaongkir (paket starter) https://rajaongkir.com/dokumentasi/starter
-        <p><b>[TASK DONE]  -> Menggunakan package https://github.com/kavist/rajaongkir</b></p>
+        <p><b>[TASK DONE]</b></p>
     </li>
     <li>
         Membuat artisan command​ yg melakukan fetching API data provinsi & kota dan data disimpan ke dalam database.
@@ -119,7 +119,7 @@
 <ol>
 
 <br><br>
-<h5>==URL HIT API==</h5>
+<h5>==URL HIT API OFFLINE==</h5>
 
 <ul>
     <li>[POST]Login=http://localhost:8000/api/auth/login</li>
@@ -127,6 +127,16 @@
     <li>[GET]Refresh_token=http://localhost:8000/api/auth/refresh_token</li>
     <li>[GET]Provinsi=http://localhost:8000/api/search/province / http://localhost:8000/api/search/province?province_id=1</li>
     <li>[GET]City=http://localhost:8000/api/search/cities / http://localhost:8000/api/search/cities?city_id=1</li>
+</ul>
+
+<h5>==URL HIT API ONLINE==</h5>
+
+<ul>
+    <li>[POST]Login=http://dottes.000webhostapp.com/api/auth/login</li>
+    <li>[GET]Logout=http://dottes.000webhostapp.com/api/auth/logout</li>
+    <li>[GET]Refresh_token=http://dottes.000webhostapp.com/api/auth/refresh_token</li>
+    <li>[GET]Provinsi=http://dottes.000webhostapp.com/api/search/province / http://dottes.000webhostapp.com/api/search/province?province_id=1</li>
+    <li>[GET]City=http://dottes.000webhostapp.com/api/search/cities / http://dottes.000webhostapp.com/api/search/cities?city_id=1</li>
 </ul>
 </body>
 </html>

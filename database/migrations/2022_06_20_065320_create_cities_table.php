@@ -14,10 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('cities', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger("city_id");
-            $table->unsignedBigInteger("province_id");
-            $table->string("name");
+            $table->unsignedInteger("city_id")->primary();
+            $table->unsignedInteger("province_id");
+            $table->string("type");
+            $table->string("city_name");
+            $table->string("postal_code");
             $table->timestamps();
         });
     }
