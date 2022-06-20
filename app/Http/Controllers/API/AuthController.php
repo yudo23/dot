@@ -40,10 +40,10 @@ class AuthController extends Controller
 
             if($token){
                 $generate = [
-                    'token' => $token,
-                    'token_type' => 'Bearer',
-                    'expires_in' => JWTAuth::factory()->getTTL() * 60,
-                    'user' => JWTAuth::user()
+                    'Token' => $token,
+                    'Token_type' => 'Bearer',
+                    'Expires_in' => JWTAuth::factory()->getTTL() * 60,
+                    'User' => JWTAuth::user()
                 ];
 
                 $data_json["IsError"] = FALSE;
@@ -90,10 +90,10 @@ class AuthController extends Controller
         $data_json;
         try {
             $generate = [
-                'token' => JWTAuth::refresh(),
-                'token_type' => 'Bearer',
-                'expires_in' => JWTAuth::factory()->getTTL() * 60,
-                'user' => JWTAuth::user()
+                'Token' => JWTAuth::refresh(),
+                'Token_type' => 'Bearer',
+                'Expires_in' => JWTAuth::factory()->getTTL() * 60,
+                'User' => JWTAuth::user()
             ];
     
             $data_json["IsError"] = FALSE;
