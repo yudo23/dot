@@ -126,8 +126,8 @@
     <li>[POST]Login=http://localhost:8000/api/auth/login</li>
     <li>[GET]Logout=http://localhost:8000/api/auth/logout</li>
     <li>[GET]Refresh_token=http://localhost:8000/api/auth/refresh_token</li>
-    <li>[GET]Provinsi=http://localhost:8000/api/search/province / http://localhost:8000/api/search/province?province_id=1</li>
-    <li>[GET]City=http://localhost:8000/api/search/cities / http://localhost:8000/api/search/cities?city_id=1</li>
+    <li>[GET]Provinsi=http://localhost:8000/api/search/province / http://localhost:8000/api/search/province?province_id=</li>
+    <li>[GET]City=http://localhost:8000/api/search/cities / http://localhost:8000/api/search/cities?city_id=</li>
 </ul>
 
 <h5>==URL HIT API ONLINE==</h5>
