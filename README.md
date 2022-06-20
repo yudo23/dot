@@ -39,7 +39,7 @@
 
 <ol>
     <li>
-        Web ini dibuat dengan menggunakan laravel 9
+        API ini dibuat dengan menggunakan laravel 9
         <br><br>
     </li>
     <li>
