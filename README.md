@@ -119,7 +119,7 @@
         Gunakann token tersebut ketika memanggil api provinsi,city,logout, dan refresh token yaitu dengan menambahkan Headers berupa Authorization : Bearer $token disetiap requestnya
         <br><br>
     </li>
-<ol>
+</ol>
 
 <br><br>
 <h5>==URL HIT API OFFLINE==</h5>
